@@ -14,7 +14,8 @@
 /*----------------------------------------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+// Uncomment if you run the program in Windows
+//#include <conio.h>
 
 // Funcion principal de Menu
 void menu();
@@ -169,7 +170,7 @@ void menu(){
         printf("--------------------------------------------------------\n");
         printf("Seleccione una opcion: ");
         scanf("%d",&opcion);
-        system("cls");
+        system("clear");
             switch (opcion){
             	case 1:
             		// Submenu ABM
@@ -187,7 +188,7 @@ void menu(){
         			printf("--------------------------------------------------------\n");
         			printf("Seleccione una opcion: ");
 					scanf("%d",&opcion2);
-					system("cls");
+					system("clear");
                         switch(opcion2){
                             case 1:
                                 altaEmpleados();
@@ -223,7 +224,7 @@ void menu(){
         			printf("--------------------------------------------------------\n");
         			printf("Seleccione una opcion: ");
 					scanf("%d",&opcion2);
-					system("cls");
+					system("clear");
                         switch(opcion2){
                             case 1:
                                 altaPresupuesto();
@@ -258,7 +259,7 @@ void menu(){
         			printf("--------------------------------------------------------\n");
         			printf("Seleccione una opcion: ");
 					scanf("%d",&opcion2);
-					system("cls");
+					system("clear");
                         switch(opcion2){
                             case 1:
                                 altaProducto();
@@ -293,7 +294,7 @@ void menu(){
         			printf("--------------------------------------------------------\n");
         			printf("Seleccione una opcion: ");
 					scanf("%d",&opcion2);
-					system("cls");
+					system("clear");
                         switch(opcion2){
                             case 1:
                                 altaProveedor();
@@ -328,7 +329,7 @@ void menu(){
         			printf("--------------------------------------------------------\n");
         			printf("Seleccione una opcion: ");
 					scanf("%d",&opcion2);
-					system("cls");
+					system("clear");
                         switch(opcion2){
                             case 1:
                                 altaCliente();
@@ -415,7 +416,7 @@ void altaEmpleados(){
 	system("pause");
     
     // Limpia pantalla y vuelve al menu
-	system("cls");
+	system("clear");
     menu();
 }
 
@@ -450,7 +451,7 @@ void bajaEmpleados(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Lista de empleados guardados en listaEmpleados.dat, listado general.
@@ -490,7 +491,7 @@ void listadoEmpleados(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Modificacion de Empleados guardados en listaEmpleados.dat, por valor, es decir parametro a cambiar.
@@ -533,31 +534,31 @@ void modifEmpleados(){
                                 scanf("%s",empleado.direccion);
                                 printf("Numero de Calle: ");
                                 scanf("%d",&empleado.direccionNumero);
-								system("cls");
+								system("clear");
 								break;
 							case 2:
 								printf("---------------------------------------------------------\n");
 								printf("Nuevo Sueldo o Actual: ");
                                 scanf("%d",&empleado.sueldo);
-								system("cls");
+								system("clear");
 								break;
 							case 3:
 								printf("---------------------------------------------------------\n");
 								printf("Ingrese Nueva Obra Social: ");
                                 scanf("%s",empleado.obraSocial);
-								system("cls");
+								system("clear");
 								break;
 							case 4:
 								printf("---------------------------------------------------------\n");
 								printf("Ingrese Nuevo E-mail: ");
                                 scanf("%s",empleado.email);
-								system("cls");
+								system("clear");
 								break;
 							case 5:
 								printf("---------------------------------------------------------\n");
 							 	printf("Ingrese Nuevo Telefono: ");
                                 scanf("%d",empleado.telefono);
-                                system("cls");
+                                system("clear");
 								break;
                         }
                     fseek(pfaux,0l,SEEK_END);
@@ -616,7 +617,7 @@ void altaPresupuesto(){
 	system("pause");
     
     // Limpia pantalla y vuelve al menu
-	system("cls");
+	system("clear");
     menu();
 }
 
@@ -651,7 +652,7 @@ void bajaPresupuesto(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Lista de presupuestos guardados en listaPresupuestos.dat, listado general.
@@ -685,7 +686,7 @@ void listadoPresupuesto(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Modificacion de presupuestos guardados en listaPresupuestos.dat, por valor, es decir parametro a cambiar.
@@ -727,25 +728,25 @@ void modifPresupuesto(){
                                 scanf("%d",&pres.precioPresupuesto);
                                 printf("Ingrese Moneda: ");
                                 scanf("%s",pres.moneda);
-								system("cls");
+								system("clear");
 								break;
 							case 2:
 								printf("---------------------------------------------------------\n");
 								printf("Nuevo E-mail: ");
                                 scanf("%s",pres.emailPresu);
-								system("cls");
+								system("clear");
 								break;
 							case 3:
 								printf("---------------------------------------------------------\n");
 								printf("Ingrese Nueva Descripcion: ");
                                 scanf("%s",pres.descripcion);
-								system("cls");
+								system("clear");
 								break;
 							case 4:
 								printf("---------------------------------------------------------\n");
 								printf("Ingrese Razon Social: ");
                                 scanf("%s",pres.razonSocial);
-								system("cls");
+								system("clear");
 								break;
                         }
                     fseek(pfaux,0l,SEEK_END);
@@ -795,7 +796,7 @@ void altaProducto(){
 	system("pause");
     
     // Limpia pantalla y vuelve al menu
-	system("cls");
+	system("clear");
     menu();
 }
 
@@ -830,7 +831,7 @@ void bajaProducto(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Lista de productos guardados en listaProductos.dat, listado general.
@@ -860,7 +861,7 @@ void listadoProducto(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Modificacion de productos guardados en listaProductos.dat, por valor, es decir parametro a cambiar.
@@ -901,19 +902,19 @@ void modifProducto(){
                                 scanf("%d",&prod.precio);
                                 printf("Ingrese Moneda: ");
                                 scanf("%s",prod.moneda);
-								system("cls");
+								system("clear");
 								break;
 							case 2:
 								printf("---------------------------------------------------------\n");
 								printf("Nuevo Nombre: ");
                                 scanf("%s",prod.nombreProducto);
-								system("cls");
+								system("clear");
 								break;
 							case 3:
 								printf("---------------------------------------------------------\n");
 								printf("Ingrese stock: ");
                                 scanf("%d", &prod.stock);
-								system("cls");
+								system("clear");
 								break;
                         }
                     fseek(pfaux,0l,SEEK_END);
@@ -973,7 +974,7 @@ void altaProveedor(){
 	system("pause");
     
     // Limpia pantalla y vuelve al menu
-	system("cls");
+	system("clear");
     menu();
 }
 
@@ -1008,7 +1009,7 @@ void bajaProveedor(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Lista de proveedores guardados en listaProveedores.dat, listado general.
@@ -1044,7 +1045,7 @@ void listadoProveedor(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Modificacion de proveedores guardados en listaProveedores.dat, por valor, es decir parametro a cambiar.
@@ -1085,19 +1086,19 @@ void modifProveedor(){
                         		printf("---------------------------------------------------------\n");
                                	printf("Ingrese Razon Social: ");
                                 scanf("%s", prov.razonSocial);
-								system("cls");
+								system("clear");
 								break;
 							case 2:
 								printf("---------------------------------------------------------\n");
 								printf("Nuevo Telefono: ");
                                 scanf("%d", &prov.telefono);
-								system("cls");
+								system("clear");
 								break;
 							case 3:
 								printf("---------------------------------------------------------\n");
 								printf("Nuevo E-mail: ");
                                 scanf("%s", prov.email);
-								system("cls");
+								system("clear");
 								break;
 							case 4:
 								printf("---------------------------------------------------------\n");
@@ -1105,13 +1106,13 @@ void modifProveedor(){
                                 scanf("%s", prov.direccion);
                                 printf("Altura: ");
                                 scanf("%d", &prov.direccionNumero);
-								system("cls");
+								system("clear");
 								break;
 							case 5:
 								printf("---------------------------------------------------------\n");
 								printf("Nuevo Rubro: ");
                                 scanf("%s", prov.rubro);
-								system("cls");
+								system("clear");
 								break;
                         }
                     fseek(pfaux,0l,SEEK_END);
@@ -1174,7 +1175,7 @@ void altaCliente(){
 	system("pause");
     
     // Limpia pantalla y vuelve al menu
-	system("cls");
+	system("clear");
     menu();
 }
 
@@ -1209,7 +1210,7 @@ void bajaCliente(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Lista de clientes guardados en listaClientes.dat, listado general.
@@ -1246,7 +1247,7 @@ void listadoCliente(){
     
     // Presiona para continuar  
 	system("pause"); 
-	system("cls");
+	system("clear");
 }
 
 //// Modificacion de clientes guardados en listaClientes.dat, por valor, es decir parametro a cambiar.
@@ -1285,13 +1286,13 @@ void modifCliente(){
 								printf("---------------------------------------------------------\n");
 								printf("Nuevo Telefono: ");
                                 scanf("%d", &cl.telefono);
-								system("cls");
+								system("clear");
 								break;
 							case 2:
 								printf("---------------------------------------------------------\n");
 								printf("Nuevo E-mail: ");
                                 scanf("%s", cl.email);
-								system("cls");
+								system("clear");
 								break;
 							case 3:
 								printf("---------------------------------------------------------\n");
@@ -1299,7 +1300,7 @@ void modifCliente(){
                                 scanf("%s", cl.direccion);
                                 printf("Altura: ");
                                 scanf("%d", &cl.direccionNumero);
-								system("cls");
+								system("clear");
 								break;
                         }
                     fseek(pfaux,0l,SEEK_END);
@@ -1398,7 +1399,7 @@ void manual(){
 	system("pause");
     
     // Limpia pantalla y vuelve al menu
-	system("cls");
+	system("clear");
     menu();
 }
 
@@ -1424,6 +1425,6 @@ void licencia(){
 	system("pause");
     
     // Limpia pantalla y vuelve al menu
-	system("cls");
+	system("clear");
     menu();
 }
